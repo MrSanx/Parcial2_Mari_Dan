@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 * {
@@ -14,8 +17,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em;
-  height: 5em;
+  margin: 1vh;
+  height: 10vh;
+  font-size: 3vh;
   background: #0f243e;
   color: #efefef;
 }
@@ -23,14 +27,17 @@ header {
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 65vh;
-  margin: 1em;
-  gap: 1em;
+  min-height: 63vh;
+  max-height: 63vh;
+  margin: 1vh;
+  gap: 1vw;
+  overflow: hidden;
+
 }
 
 .contenido {
   grid-column: 1 / 3;
-  font-size: 1.5em;
+  font-size: 2.3vh;
   text-overflow: clip;
 }
 
@@ -39,16 +46,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2vh;
   background: #7030a0;
-  
   color: #efefef;
 }
 
 .widgets {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 1em;
-  gap: 1em;
+  font-size: 2vh;
+  margin: 1vh;
+  gap: 1vh;
 }
 
 .widget1 {
@@ -73,27 +81,24 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  width: 98%;
-  margin: 1em;
-  height: 5em;
-  bottom: 0%;
+  margin: 1vh;
+  height: 10vh;
   background: #0f243e;
 }
 
 .footerLeft,
 .footerRight {
-  margin: 1em;
+  margin: 2vh;
   display: inline-block;
 }
 
 .footerLeft h1 {
   margin: 0;
   color: #efefef;
-  font-size: 1rem;
+  font-size: 2vh;
   text-overflow: clip;
 }
 
 .footerRight img {
-  height: 3em;
+  height: 6vh;
 }
