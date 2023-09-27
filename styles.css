@@ -47,7 +47,7 @@ header {
 
 .sidebar {
   grid-column: 3 / 4;
-  display: flex;
+  display: block;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -114,8 +114,8 @@ footer {
   margin: 2vh;
   align-items: center;
   justify-content: center;
-
 }
+
 
 p{
   font-size: 3vh;
